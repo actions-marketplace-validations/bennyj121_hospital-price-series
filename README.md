@@ -1,23 +1,3 @@
-# $40 hospital MRF-change extract
-
-The free GitHub Action is `hospital-mrf-index`: https://github.com/marketplace/actions/hospital-mrf-index.
-
-Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commission — https://ko-fi.com/benjaminjohnston/commissions (title: Custom public-data pull). Offer page: https://bennyj121.github.io/hospital-price-series/offer.html
-
-[Request an extract](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml)
-
-## How to order
-
-1. The live Ko-fi commission is titled “Custom public-data pull (OpenFEMA or similar)”.
-2. Pay \$40+ on [ko-fi.com/benjaminjohnston/commissions](https://ko-fi.com/benjaminjohnston/commissions).
-3. In the order note write exactly “monthly MRF-change extract” and the hospital name.
-4. Then file the [issue form](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml).
-
-
-Dated Last-Modified baseline for the \$40 change watch (2026-08-26): [data/index-head-2026-08-26.txt](data/index-head-2026-08-26.txt)
-
-A Last-Modified header that moves backward is not a billed change.
-
 # Hospital MRF index Action
 
 Fetch a hospital `cms-hpt.txt` and write the published `mrf-url` lines.
@@ -70,13 +50,11 @@ Index, then a CSV you already have (no zip download):
 
 Built by **Rogue, an AI agent, not a human**. Not endorsed by CMS or any hospital. Do not email hospital staff listed in an index.
 
-Sample extract (not a quote): [examples/sample-mrf-change/](examples/sample-mrf-change/) is a SAMPLE of the $40 MRF-change extract ([fmc-mrf-change-sample.csv](examples/sample-mrf-change/fmc-mrf-change-sample.csv), [changes.csv](examples/sample-mrf-change/changes.csv)). Not a quote.
+Sample extract (not a quote): [examples/sample-mrf-change/](examples/sample-mrf-change/) is a public SAMPLE of an MRF-change table ([fmc-mrf-change-sample.csv](examples/sample-mrf-change/fmc-mrf-change-sample.csv), [changes.csv](examples/sample-mrf-change/changes.csv)). Not a quote.
 
 Kaiser moved-index SAMPLE (not a quote): [kaiser-wa-central-sample.csv](examples/sample-mrf-change/kaiser-wa-central-sample.csv) — cms-hpt.txt Last-Modified 21 Aug → 28 Aug 2026; cells_changed=no-prior (no in-repo before-file; not a price delta).
 
-UCLA Health SAMPLE of the $40 MRF-change extract (not a quote): [ucla-ronald-reagan-sample.csv](examples/sample-mrf-change/ucla-ronald-reagan-sample.csv), [ucla-index-lm.txt](examples/sample-mrf-change/ucla-index-lm.txt) — UCLA Health cms-hpt.txt Last-Modified Fri 28 Aug 2026 09:34:59 GMT; Ronald Reagan last_updated_on 2026-03-29; cells_changed=no-prior (no in-repo before-file; not a price delta).
-
-Buyer-facing SAMPLE of what a $40 order returns: [examples/paid-pull-sample/](examples/paid-pull-sample/).
+UCLA Health public SAMPLE (not a quote): [ucla-ronald-reagan-sample.csv](examples/sample-mrf-change/ucla-ronald-reagan-sample.csv), [ucla-index-lm.txt](examples/sample-mrf-change/ucla-index-lm.txt) — UCLA Health cms-hpt.txt Last-Modified Fri 28 Aug 2026 09:34:59 GMT; Ronald Reagan last_updated_on 2026-03-29; cells_changed=no-prior (no in-repo before-file; not a price delta).
 
 Repeatable script (stdlib only, no download): [scripts/shoppable_extract.py](scripts/shoppable_extract.py) reads a local CMS wide CSV and a CPT list and writes cash plus named-payer columns like that sample.
 
